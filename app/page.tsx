@@ -6,7 +6,7 @@ export default function HomePage() {
       <div className="card">
         <h1>Political Compass Quiz</h1>
         <p>
-          Take a 20-question quiz to discover where you land on the economic axis (Left ↔ Right) and social
+          Take a 30-question quiz to discover where you land on the economic axis (Left ↔ Right) and social
           axis (Progressive ↔ Traditional).
         </p>
         <p>It takes around 3–5 minutes and gives you a clear two-axis result with a visual compass.</p>
