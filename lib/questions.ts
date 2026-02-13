@@ -43,7 +43,7 @@ export const QUESTIONS: Question[] = [
   { id: 20, axis: "social", text: "Free speech protections should extend to offensive views, as long as they don’t directly incite violence.", reverse: true },
 
   // Current debates (C1–C10)
-  { id: 21, axis: "social", text: "If DHS funding is at risk of lapsing, Congress should only pass a funding bill that includes stronger oversight and limits on federal immigration enforcement.", reverse: true },
+  { id: 21, axis: "social", text: "The U.S. should require clear labeling (and penalties for deception) for AI-generated deepfakes in political ads, even if it restricts some kinds of political messaging.", reverse: true },
   { id: 22, axis: "social", text: "The U.S. should require strict national-security controls for major social media platforms with foreign ownership/control, even if it means forcing divestment or banning the app if requirements aren’t met.", reverse: false },
   { id: 23, axis: "social", text: "Voter registration should require documentary proof of citizenship nationwide (a federal standard).", reverse: false },
   { id: 24, axis: "econ", text: "Canada should move forward with national pharmacare that publicly covers essential prescription drugs, even if it increases federal spending.", reverse: true },
