@@ -141,3 +141,65 @@ p {
   color: #b91c1c;
   margin-top: 0.75rem;
 }
+
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --card-soft: #1f2937;
+  --accent: #6366f1;
+  --accent-2: #8b5cf6;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #111827 100%);
+  color: var(--text);
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: white;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99,102,241,0.35);
+}
+
+.btn-secondary {
+  background: var(--card-soft);
+  color: var(--text);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.badge {
+  display: inline-block;
+  background: var(--card-soft);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
