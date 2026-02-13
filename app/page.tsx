@@ -8,11 +8,6 @@ export default function HomePage() {
   return (
     <main className="container">
       <div className="card fadeIn" style={{ textAlign: "center" }}>
-        <div style={{ display: "flex", justifyContent: "center", gap: 10, flexWrap: "wrap", marginBottom: 14 }}>
-          <span className="badge">Canada + USA</span>
-          <span className="badge">Two-axis scoring</span>
-          <span className="badge">{QUESTIONS.length} questions</span>
-        </div>
 
         <h1 className="heroTitle">Political Compass Quiz</h1>
 
@@ -37,8 +32,7 @@ export default function HomePage() {
         </div>
 
         <p className="muted" style={{ marginTop: 18, fontSize: 14 }}>
-          ~4 minutes • {econCount} economic + {socCount} social • privacy-safe cooldown to prevent repeats
-        </p>
+          ~4 minutes • {econCount} economic + {socCount} social
       </div>
     </main>
   );
