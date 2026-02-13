@@ -95,7 +95,7 @@ export default function QuizPage() {
               Next
             </button>
           ) : (
-            <button className="btn btn-primary" disabled={!allAnswered || submitting} onClick={onSubmit}>
+            <button className="answerBtn" disabled={!allAnswered || submitting} onClick={onSubmit}>
               {submitting ? "Submitting..." : "Submit Quiz"}
             </button>
           )}
