@@ -1,15 +1,23 @@
 import Link from "next/link";
-import { axisLabel, getQuadrantText } from "@/lib/questions";
+import { axisLabel, getQuadrantText, QUESTIONS } from "@/lib/questions";
 
 function CompassChart({ econScore, socScore }: { econScore: number; socScore: number }) {
-  const maxAxis = 30;
-  const size = 320;
-  const center = size / 2;
-  const scale = center / maxAxis;
+const size = 320;
+const center = size / 2;
 
-  const x = center + econScore * scale;
-  const y = center + socScore * scale;
+const econCount = QUESTIONS.filter((q) => q.axis === "econ").length;
+const socCount = QUESTIONS.filter((q) => q.axis === "social").length;
 
+const maxEcon = econCount * 3; // -3..+3 per question
+const maxSoc = socCount * 3;
+
+const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
+
+const scaleX = center / maxEcon;
+const scaleY = center / maxSoc;
+
+const x = clamp(center + econScore * scaleX, 8, size - 8);
+const y = clamp(center + socScore * scaleY, 8, size - 8);
   return (
     <svg width="100%" viewBox={`0 0 ${size} ${size}`} role="img" aria-label="Political compass chart">
       <rect x="0" y="0" width={size} height={size} fill="#f8fafc" rx="12" />
